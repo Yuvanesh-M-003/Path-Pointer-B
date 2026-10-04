@@ -1,0 +1,10 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/top-150/route.js")
+R.c("server/chunks/src_app_api_top-150_route_ts_0.zmgaf._.js")
+R.c("server/chunks/node_modules_next_0hk_-yd._.js")
+R.c("server/chunks/node_modules_drizzle-orm_0z1k.gx._.js")
+R.c("server/chunks/node_modules_@supabase_auth-js_dist_module_00jw3pg._.js")
+R.c("server/chunks/[root-of-the-server]__0unisoh._.js")
+R.c("server/chunks/[root-of-the-server]__0q7758m._.js")
+R.c("server/chunks/_next-internal_server_app_api_top-150_route_actions_0op30wt.js")
+R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/top-150/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/top-150/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

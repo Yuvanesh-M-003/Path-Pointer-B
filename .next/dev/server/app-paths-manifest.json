@@ -1,0 +1,13 @@
+{
+  "/api/dashboard/route": "app/api/dashboard/route.js",
+  "/api/mastery/route": "app/api/mastery/route.js",
+  "/api/notifications/route": "app/api/notifications/route.js",
+  "/api/problems/[id]/solve/route": "app/api/problems/[id]/solve/route.js",
+  "/api/problems/route": "app/api/problems/route.js",
+  "/api/profile/route": "app/api/profile/route.js",
+  "/api/progress/route": "app/api/progress/route.js",
+  "/api/recommendations/route": "app/api/recommendations/route.js",
+  "/api/roadmap/route": "app/api/roadmap/route.js",
+  "/api/top-150/route": "app/api/top-150/route.js",
+  "/api/topics/route": "app/api/topics/route.js"
+}

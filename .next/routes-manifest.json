@@ -1,0 +1,192 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/goals/[id]",
+      "regex": "^/api/goals/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/goals/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/notifications/[id]/read",
+      "regex": "^/api/notifications/([^/]+?)/read(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/notifications/(?<nxtPid>[^/]+?)/read(?:/)?$"
+    },
+    {
+      "page": "/api/problems/[id]",
+      "regex": "^/api/problems/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/problems/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/problems/[id]/solve",
+      "regex": "^/api/problems/([^/]+?)/solve(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/problems/(?<nxtPid>[^/]+?)/solve(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/analytics",
+      "regex": "^/api/analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/analytics(?:/)?$"
+    },
+    {
+      "page": "/api/dashboard",
+      "regex": "^/api/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/dashboard(?:/)?$"
+    },
+    {
+      "page": "/api/goals",
+      "regex": "^/api/goals(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/goals(?:/)?$"
+    },
+    {
+      "page": "/api/health",
+      "regex": "^/api/health(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/health(?:/)?$"
+    },
+    {
+      "page": "/api/mastery",
+      "regex": "^/api/mastery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/mastery(?:/)?$"
+    },
+    {
+      "page": "/api/notifications",
+      "regex": "^/api/notifications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/notifications(?:/)?$"
+    },
+    {
+      "page": "/api/notifications/read-all",
+      "regex": "^/api/notifications/read\\-all(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/notifications/read\\-all(?:/)?$"
+    },
+    {
+      "page": "/api/onboarding",
+      "regex": "^/api/onboarding(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/onboarding(?:/)?$"
+    },
+    {
+      "page": "/api/problems",
+      "regex": "^/api/problems(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/problems(?:/)?$"
+    },
+    {
+      "page": "/api/profile",
+      "regex": "^/api/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/profile(?:/)?$"
+    },
+    {
+      "page": "/api/progress",
+      "regex": "^/api/progress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/progress(?:/)?$"
+    },
+    {
+      "page": "/api/recommendations",
+      "regex": "^/api/recommendations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/recommendations(?:/)?$"
+    },
+    {
+      "page": "/api/roadmap",
+      "regex": "^/api/roadmap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/roadmap(?:/)?$"
+    },
+    {
+      "page": "/api/roadmap/progress",
+      "regex": "^/api/roadmap/progress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/roadmap/progress(?:/)?$"
+    },
+    {
+      "page": "/api/top-150",
+      "regex": "^/api/top\\-150(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/top\\-150(?:/)?$"
+    },
+    {
+      "page": "/api/topics",
+      "regex": "^/api/topics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/topics(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
